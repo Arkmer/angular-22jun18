@@ -1,13 +1,19 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <script src="vendors/angular.min.js"></script>
-    <script src="scripts/client.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<script src="vendors/angular.min.js"></script>
+	<script src="scripts/client.js"></script>
 </head>
-<body>
-    <h1>Hello World</h1>
+
+<body ng-app="myApp">
+	<h1>Hello World</h1>
+	<div ng-controller="TestController as vm">
+		<p>{{ vm.message }}</p>
+	</div>
 </body>
+
 </html>
